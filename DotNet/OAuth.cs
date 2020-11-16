@@ -6,7 +6,7 @@ namespace skdm
 {
 	public class OAuth
 	{
-		protected static String oAuthHeader = "{\"alg\":\"SH256\"}";
+		protected static String oAuthHeader = "{\"alg\":\"HS256\"}";
 		protected static String claimTemplate = "{{\"iss\": \"{0}\", \"prn\": \"{1}\", \"aud\": \"{2}\", \"exp\": \"{3}\", \"iat\": \"{4}\"}}";
 		protected static DateTime utcStart = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 

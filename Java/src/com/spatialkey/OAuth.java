@@ -37,7 +37,7 @@ public class OAuth {
 	 */
 	public static String getOAuthToken(String userAPIKey, String orgAPIKey, String orgSecretKey, int ttl) throws Exception 
 	{
-		String header = "{\"alg\":\"SH256\"}";
+		String header = "{\"alg\":\"HS256\"}";
         String claimTemplate = "'{'\"iss\": \"{0}\", \"prn\": \"{1}\", \"aud\": \"{2}\", \"exp\": \"{3}\", \"iat\": \"{4}\"'}'";
 
         // create JWT Token
